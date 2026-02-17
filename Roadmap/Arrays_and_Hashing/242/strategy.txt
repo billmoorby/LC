@@ -1,0 +1,14 @@
+# Strategy
+
+* Naive Approach:
+  - Sorting the array first can lead to O(n log n) time complexity in the worst case.
+
+  - Has O(n) space complexity.
+
+  - "return sorted(s) == sorted(t)"
+
+
+* Optimized Approach:
+  - 1st, check if both the 2 strings are of equal length. If not, we can return False and exit early.
+
+  - We create 2 hashmaps and check if they are equal.

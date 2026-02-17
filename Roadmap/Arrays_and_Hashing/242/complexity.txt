@@ -1,0 +1,19 @@
+# Time Complexity: O(n)
+
+* Time Complexity in the worst case is linear O(n).
+  - Going through each character in string 's' and 't' takes linear O(n) time.
+
+  - The dictionary get() and insertion methods takes constant O(1) time.
+
+  - Comparing each key, value pair in both dictionaries takes O(n) time.
+
+  - Overall time complexity in the worst case is linear O(n) where 'n' is the length of the input strings.
+
+
+# Space Complexity: O(n) or O(1)
+  - The 2 dictionaries in the worst case can store 'n' characters.
+
+  - Overall space complexity is linear O(n) where 'n' is the length of the input strings.
+
+  - However, since the strings can only have a fixed number of 26 characters from the alphabet, the space can be constant. Each hashmap can have at MOST 26 characters, leading to constant O(1) space.
+  
