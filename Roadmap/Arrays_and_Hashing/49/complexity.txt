@@ -1,0 +1,8 @@
+# Time Complexity: O(n*k)
+
+* For each of the 'n' strings, we go through at worst 'k' characters, where 'k' is the length of the longest string. This means we have a time complexity of O(n*k).
+
+
+# Space Complexity: O(n*k)
+
+* In the WORST case, all strings are UNIQUE ANAGRAMS, so each string has its own list of at worst, length 'k'.

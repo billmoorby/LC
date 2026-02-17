@@ -1,0 +1,11 @@
+# Strategy
+
+* Optimized Approach:
+  - Create a default dictionary of lists so we can store each anagram group in its own list.
+
+  - For every string in the list, create a binary list that stores the ASCII value.
+
+  - Append to that list if we see a character.
+
+  - Turn that binary list into the key for each ASCII group(remember to convert to a tuple).
+
