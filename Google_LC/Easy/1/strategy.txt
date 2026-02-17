@@ -1,0 +1,9 @@
+# Strategy
+
+* Naive Approach:
+  - Brute force O(n^2) nested for loop that iterates through every value for each value in the array. Has O(1) space since we're not using any additional data structures.
+
+* Optimized Approach:
+  - Use a hashmap and check if the difference(target-num) exists. If it does, return the indices in a list. Else, add the number and index to the hashmap.
+
+  - We only have to iterate through the list once leading to linear O(n) time.
