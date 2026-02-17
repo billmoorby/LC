@@ -1,0 +1,7 @@
+# Strategy
+
+* Optimized Approach:
+  - Use a set or hashmap that contains seen characters.
+
+  - O(n) time to iterate through all 'n' characters in the array.
+  

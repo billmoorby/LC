@@ -1,0 +1,9 @@
+# Time Complexity: O(n)
+
+* Time Complexity is O(n) since we iterate through all 'n' characters in the array in the worst case.
+  - The hashmap lookups and insertions all take constant O(1) time.
+
+
+# Space Complexity: O(n)
+
+* In the worst case, we have no duplicates and we end up storing ALL 'n' elements in the hashmap, leading to O(n) space.
