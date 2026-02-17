@@ -1,0 +1,19 @@
+# Time Complexity: O(n)
+
+* Best Time Complexity is O(n), where 'n' is the number of elements in the input array.
+  - Function iterates through each element in "nums". So O(n) where 'n' is the number of elements in "nums".
+
+  - Checking if the difference exists in the hashmap takes O(1) time, because lookups in hashmaps are constant O(1) on average.
+
+  - Adding the value and index to the hashmap is O(1). Inserting also take sup constant O(1) time.
+
+* This approach only requires a SINGLE pass through the array and constant-time lookups in the hashmap, giving a time complexity of O(n).
+
+
+
+# Space Complexity: O(n)
+
+* Space Complexity is O(n), as it depends on the number of elements stored in the hashmap. We could potentially end up adding ALL the elements in the array.
+  - Hashmap in WORST case takes O(n) space complexity if no solution is found and we end up storing all 'n' elements in the array.
+
+  - Other variables(index, num, target) takes constant O(1) space.
