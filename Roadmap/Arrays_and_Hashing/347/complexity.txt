@@ -1,0 +1,10 @@
+# Time Complexity: O(n)
+
+* In order to build the "freq_map" and "freq" arrays, we have to iterate over the "nums" array of length 'n' in the worst case, which means the time complexity is O(n).
+
+
+# Space Complexity: O(n+k)
+
+* "freq_map" array stores each element in the "nums" array. In the worst case, this is linear O(n) space.
+
+* "res" array contains the top "k" elements. In the worst case this is O(k) space.

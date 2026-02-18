@@ -1,0 +1,8 @@
+# Strategy
+
+* Optimized Approach:
+  - Use bucket sort to contain all possible "k" frequencies (0, to the length of the list).
+
+  - Create a dictionary to store the frequency and then iterate through it to populate the bucket array with the numbers that are of a certain frequency.
+
+  - Finally, go through the bucket array backwards so we can get the top 'k' elements.
