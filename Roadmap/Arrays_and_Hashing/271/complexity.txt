@@ -1,0 +1,20 @@
+# Time Complexity: O(n)
+
+* Time Complexity for encode() is O(n).
+  - We are iterating through all 'n' strings in the strs array in encode().
+
+  - For each string wr are concatenating the length of the string and a delimiter which takes constant O(1) time.
+
+# Time Complexity for decode() is O(n).
+  - We are iterating through a encoded string of 'n' characters.
+
+  - For each string we are performing slice operations.
+
+
+# Space Complexity: O(n)
+
+* Space Complexity for encode() is O(n).
+  - Our final encoded string contains all the characters in our 'n' strings plus our additional delimiters.
+
+* Space Complexity for decode() is O(n).
+  - The output list is equal to the original list of size 'n' strings.
