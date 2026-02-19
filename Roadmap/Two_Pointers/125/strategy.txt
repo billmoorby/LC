@@ -1,0 +1,15 @@
+# Strategy
+
+* Naive Approach:
+  - Using the join() method creates a NEW string of linear O(n) space.
+
+  - lower() and replace() both create NEW strings of linear O(n) space if used on the ENTIRE STRING.
+
+
+* Optimized Approach:
+  - Use 2 pointers so we can achieve O(n) time.
+
+  - Use while loop to filter out non-alphanumeric characters using the isalnum() method.
+
+  - No new data structures are created when we call isalnum() and lower() methods on a SINGLE character instead of the entire string. This is due to the constant time lookups using the lookup map.
+  

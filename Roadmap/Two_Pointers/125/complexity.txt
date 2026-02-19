@@ -1,0 +1,11 @@
+# Time Complexity: O(n)
+
+* Time Complexity is O(n) in order to iterate both pointers through the entire string.
+  - Loop runs at most 'n' times where 'n' is the length of the string.
+
+  - We use a while loop to filter out any non-alphanumeric characters.
+
+
+# Space Complexity: O(1)
+
+* Space Complexity is constant O(1) since no new data structures were created. isalnum() and lower() are called on a SINGLE CHARACTER, not the entire string. This leads to constant O(1) time lookups using a lookup map.
