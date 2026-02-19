@@ -1,0 +1,16 @@
+# Time Complexity: O(n)
+
+* We are calculating the prefix and postfix products. This requires 2 passes of the array.
+
+* The first pass gets the products of the elements to the LEFT.
+
+* The second pass gets the products of the elements to the RIGHT.
+
+
+# Space Complexity: O(n) or O(1)
+
+* The "res" array size depends on the number of 'n' elements in the "nums" array.
+
+* The "left_prod" and right_prod" variables are constant space.
+
+* If the problem does NOT count the output array as extra space, since we have to return it anyway, the space is constant O(1) space.
