@@ -1,0 +1,26 @@
+# Time Complexity: O(n^2) or O(1)
+
+* Best Time Complexity is O(n^2)
+  - This is because we have to go through the entire NxN grid to check if the Sudoku board is valid.
+
+  - We can think of the time complexity as constant O(1), since the board size is fixed to be 9x9.
+
+  - For general NxN boards, the time complexity is O(n^2).
+
+
+# Space Complexity: O(n^2) or O(1)
+
+* Best Space Complexity is O(n^2) for GENERAL (NxN) board, and O(1) for a fixed (9x9) board.
+  - In the worst case, we have a FULLY FILLED-OUT VALID Sudoku board, so every row is filled, and every column is filled. This means all 9 squares are filled.
+
+  - This means that for each of the 9 rows in the row_map, we will store at most 9 unique digits. Leads to 81 digits.
+
+  - For each of the 9 columns in the col_map, we will store at most 9 unique digits. leads to 81 digits.
+
+  - For each of the 9 squares in the square_map, we will store at most 9 unique digits. Leads to 81 digits.
+
+  - In the worst case, all 3 maps are filled leading to O(81*3) space. This is a fixed upper bound so technically the space is constant O(1) for a 9x9 board.
+
+  - A general NxN board would have O(n^2) space complexity.
+
+  

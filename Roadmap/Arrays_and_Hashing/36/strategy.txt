@@ -1,0 +1,45 @@
+# Strategy
+
+* Naive Approach:
+
+
+* Optimized Approach:
+  - Create 3 different default dictionaties of SETS(row_map, col_map, square_map).
+
+  - For the square_map, we divide the 9x9 board by 3, so that we get a square denoted by (0/3), (1/3), (2/3).
+
+  - For the first 3 rows and 3 columns, when we construct the square map, we would get...
+    - Square 1 = (0, 0) ==> (row//3, col//3)
+      - For (rows 0-2, cols 0-2), we'd get 0//3, 1//3, and 2//3 all equal to zero(for both the row_map and the col_map).
+    
+    - Square 2 = (0, 1) ==> (row//3, col//3)
+      - For (rows 0-2), we'd get 0//3, 1//3, and 2//3 all equal to zero(for the row_map).
+      - For (cols 3-5), we'd get 3//3, 4//3, and 5//3 all equal to one(for the col_map).
+
+    - Square 3 = (0, 2) ==> (row//3, col//3)
+      - For (rows 0-2), we'd get 0//3, 1//3, and 2//3 all equal to zero(for the row_map).
+      - For (cols 6-8), we'd get 6//3, 7//3, and 8//3 all equal to one(for the col_map).
+
+    - Square 4 = (1, 0) ==> (row//3, col//3)
+      - For (rows 3-5), we'd get 3//4, 4//3, and 5//3 all equal to one(for the row_map).
+      - For (cols 0-2), we'd get 0//3, 1//3, and 2//3 all equal to zero(for the col_map).
+
+    - Square 5 = (1, 1) ==> (roe//3, col//3)
+      - For (rows 3-5), we'd get 3//3, 4//3, and 5//3 all equal to one(for the row_map).
+      - For (cols 3-5), we'd get 3//3, 4//3, and 5//3 all equal to one(for the col_map).
+    
+    - Square 6 = (1, 2) ==> (row//3, col//3)
+      - For (rows 3-5), we'd get 3//3, 4//3, and 5//3 all equal to one(for the row_map).
+      - For (cols 6-8), we'd get 6//3, 7//3, and 8//3 all equal to two(for the col_map).
+
+    - Square 7 = (2, 0) ==> (row//3, col//3)
+      - For (rows 6-8), we'd get 6//3, 7//3, and 8//3 all equal to two(for the row_map).
+      - For (cols 0-2), we'd get 0//3, 1//3, and 2//3 all equal to zero(for the col_map).
+
+    - Square 8 = (2, 1) ==> (row//3, col//3)
+      - For (rows 6-8), we'd get 6//3, 7//3, and 8//3 all equal to two(for the row_map).
+      - For (cols 3-5), we'd get 3//3, 4//3, and 5//3 all equal to one(for the col_map).
+
+    - Square 9 = (2, 2) ==> (row//3, col//3)
+      - For (rows 6-8), we'd get 6//3, 7//3, and 8//3 all equal to two(for the row_map).
+      - For (cols 6-8), we'd get 6//3, 7//3, and 8//3 all equal to two(for the row_map).
