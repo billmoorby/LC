@@ -3,7 +3,7 @@
 * Time Complexity for encode() is O(n).
   - We are iterating through all 'n' strings in the strs array in encode().
 
-  - For each string wr are concatenating the length of the string and a delimiter which takes constant O(1) time.
+  - For each string we are concatenating the length of the string and a delimiter which takes constant O(1) time.
 
 # Time Complexity for decode() is O(n).
   - We are iterating through a encoded string of 'n' characters.

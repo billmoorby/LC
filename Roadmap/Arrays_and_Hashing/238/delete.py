@@ -11,7 +11,7 @@ class Solution:
     right_prod = 1
     for i in range(len(nums)-1, -1, -1):
       res[i] *= right_prod
-      right_prod *= nums[i]
+      right_prod *= nums[i]  
     
     return res
   

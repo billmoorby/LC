@@ -7,7 +7,7 @@ class Solution:
 
     for n in nums:
       freq_map[n] = freq_map.get(n, 0)+1
-    
+
     for n, freq in freq_map.items():
       buckets[freq].append(n)
     
