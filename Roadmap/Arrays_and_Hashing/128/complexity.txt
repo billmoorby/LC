@@ -1,0 +1,15 @@
+# Time Complexity: O(n)
+
+* Best Time Complexity is O(n), where 'n' is the number of elements we have to go through in the "nums" array and the "num_set" set.
+
+  - Create a set to store all the numbers and iterate through all 'n' elements.
+
+  - Check if (n-1) exists. If not, we have a NEW streak.
+
+  - Continue chcking for (n+1) until we have a new streak. Update the streak with the new max streak.
+
+
+
+# Space Complexity: O(n)
+
+* We create a "num_set" set of 'n' elements so that we can sort the elements in order. Leads to O(n) space.

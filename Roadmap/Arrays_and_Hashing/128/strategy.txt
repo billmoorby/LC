@@ -1,0 +1,11 @@
+# Strategy
+
+* Naive Approach:
+  - Go through EACH element, and check if (n+1) exists. If not, or streak end, repeat process with the NEXT element. Leads to O(n^2) runtime.
+
+* Optimized Approach:
+  - Create a set to store all the numbers and iterate through them.
+
+  - Check if (n-1) exists. If not, we have a NEW streak.
+
+  - Continue checking for (n+1) until we have a new streak. Update the streak with the new max streak.
