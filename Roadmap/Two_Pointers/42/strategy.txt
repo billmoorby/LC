@@ -1,0 +1,25 @@
+# Strategy
+
+* Naive Approach: O(n) time and O(n) space.
+  - We create a maxL and a maxR array to get the max left and max right values at each index in the 'height' array.
+
+  - We then calculate the min(maxL, maxR) at each index in the array using the above 2 arrays. This allows us to calculate the water height we can store at each index using (min(maxL, maxR) - height[i]).
+
+  - Creating the maxL and maxR arrays, each requires going through the entire array of 'n' elements, leading to a runtime of O(n).
+
+  - We make a single pass over the 'height' array to compute the trapped water at each position. This also takes O(n) time.
+
+  - Creating two maxL and maxR arrays takes up O(n) space, since each are of size 'n'(the length of the 'height' array). 
+  
+  - The extra variables take up constant O(1) space.
+
+
+* Optimized Approach: O(n) time and O(1) space
+  - 2 pointer approach where left(starts at 0) and right(starts at len-1)
+
+  - We want the maxL and maxR at each iteration. We move the max pointer with the SMALLER value.
+    - This is so we could potentially encounter a greater height, thus trap more rain water.
+  
+  - If nothing is between our 2 borders(left and right), we can fill it with water because we know for sure there are 2 existing bounds, assuming no obstacles.
+
+  
