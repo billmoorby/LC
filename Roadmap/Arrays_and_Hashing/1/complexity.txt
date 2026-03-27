@@ -5,7 +5,7 @@
 
   - Checking if the difference exists in the hashmap takes O(1) time, because lookups in hashmaps are constant O(1) on average.
 
-  - Adding the value and index to the hashmap is O(1). Inserting also take sup constant O(1) time.
+  - Adding the value and index to the hashmap is O(1). Inserting also takes up constant O(1) time.
 
 * This approach only requires a SINGLE pass through the array and constant-time lookups in the hashmap, giving a time complexity of O(n).
 

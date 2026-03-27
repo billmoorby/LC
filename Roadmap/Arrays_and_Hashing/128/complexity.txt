@@ -6,7 +6,7 @@
 
   - Check if (n-1) exists. If not, we have a NEW streak.
 
-  - Continue chcking for (n+1) until we have a new streak. Update the streak with the new max streak.
+  - Continue checking for (n+1) until we have a new streak. Update the streak with the new max streak.
 
 
 
