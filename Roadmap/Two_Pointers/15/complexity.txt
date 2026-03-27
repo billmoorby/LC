@@ -1,0 +1,18 @@
+# Time Complexity: O(n^2)
+
+* Time Complexity is O(n^2) since we're using double nested for loops.
+
+  - We first sort the array so that we can use the two pointer approach to iterate through the array. Sorting takes O(n log n) time.
+
+  - We then create a outer loop to go through each of the elements in the array.
+
+  - Inside that outer loop, we have an inner loop that iterates the left and right pointers for each 'n' element in the array.
+
+  - This double for loop leads to O(n^2) runtime.
+
+
+* Space Complexity: O(n^2)
+
+  - Sorting takes extra O(n) space at most for 'n' elements.
+
+  - In the worst case, all our triplets are valid and we end up storing all N^2 of them, leading to O(n^2) in the worst space case.

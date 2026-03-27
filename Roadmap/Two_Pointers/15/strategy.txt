@@ -1,0 +1,9 @@
+# Strategy
+
+* Optimized Approach
+  - We sort the array first which will take O(n log n) time so we can use the two pointers approach to iterate through the array.
+
+  - We will run two loops.
+    - The first loop iterates through the array to give us the first value and will go through each value in the array.
+
+    - Within that first loop, we have a second loop that iterates the left and right pointers, and essentially performs Two Sum II.
