@@ -1,0 +1,17 @@
+# Time Complexity: O(n)
+
+* Time Complexity is O(n) since we're iterating through the "height" array only once using two pointers.
+
+  - Initialize a left pointer at the start and right pointer at the end, so we can maximize the area.
+
+  - We calculate the area at each iteration. 
+  
+  - Shift the left pointer when it is smaller than the height of the right pointer, to find a potentially larger height for the left pointer.
+
+  - Shift the right pointer when it is smaller than the height of the left pointer, to find a potentially larger height for the right pointer.
+
+
+
+# Space Complexity: O(1)
+
+* Space Complexity is constant O(1), since no additional data structures were created, only 2 pointer variables.

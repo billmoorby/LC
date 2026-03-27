@@ -1,0 +1,18 @@
+# Strategy
+
+* Naive Approach 
+  - Brute force O(n^2) solution that uses a double for loop.
+
+  - The outer loop is for the left pointer and the inner loop uses a right pointer that is always at least 1 position ahead of the left.
+
+
+* Optimized Approach O(n) time:
+  - Initialize a left pointer at the start and right pointer at the end, so we can maximize the area.
+
+  - We calculate the area at each iteration. 
+  
+  - Shift the left pointer when it is smaller than the height of the right pointer, to find a potentially larger height for the left pointer.
+
+  - Shift the right pointer when it is smaller than the height of the left pointer, to find a potentially larger height for the right pointer.
+
+  - It does not matter which pointer we shift when the heights are equal, so pick either one.
