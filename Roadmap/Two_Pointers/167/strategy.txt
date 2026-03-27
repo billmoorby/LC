@@ -1,0 +1,12 @@
+# Strategy
+
+* Optimized Approach:
+  - Use 2 pointers(left, right) to iterate over the list since the array is sorted in increasing order.
+
+  - Sum both the values at the left and right pointer.
+
+  - Check if the sum equals the target, if it does return the two indices and increase them both by 1(1-indexed).
+
+  - Else, if the sum is less than the target, move the left pointer to increase the sum.
+
+  - Else if the sum is greater than the target, move the right pointer to decrease the sum.

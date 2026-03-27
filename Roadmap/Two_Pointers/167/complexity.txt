@@ -1,0 +1,8 @@
+# Time Complexity: O(n)
+
+* Time Complexity is O(n) since we're using 2 pointers to iterate over the list which takes at most O(n) time depending on the size of the list.
+
+
+# Space Complexity: O(1)
+
+* Space Complexity is constant O(1) since we're only using variables(left, right, currentSum). No new data structures were created.
