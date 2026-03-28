@@ -1,0 +1,12 @@
+# Strategy
+
+* Optimized Approach
+  - Use binary search to divide the search space in half with each iteration.
+
+  - This means the number of elements that need to be considered reduces by half at every step.
+
+  - If the target is the middle number, return the index.
+
+  - If the target is less than the middle number, search the left half.
+
+  - If the target is greater than the middle number, search the right half.

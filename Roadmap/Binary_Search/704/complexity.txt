@@ -1,0 +1,16 @@
+# Time Complexity: O(log n)
+
+* Time Complexity is O(log n) since we use binary search.
+  - Binary search divides the search space in half with each iteration.
+
+  - This means the number of elements that we search reduces by half at every step.
+
+  - Overall time complexity is O(log n) where 'n' is the length of the input array.
+
+
+
+# Space Complexity: O(1)
+
+* Space Complexity is O(1) as variables "low", "high", and "mid" use constant O(1) space.
+
+  - No recursionso no additional stack space is used.
