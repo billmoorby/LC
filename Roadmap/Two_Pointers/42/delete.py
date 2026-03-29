@@ -3,7 +3,7 @@ class Solution:
   def trap(self, height):
     if not height:
       return 0
-    
+
     waterCount = 0
     n = len(height)
 
@@ -19,6 +19,5 @@ class Solution:
         right-=1
         maxR = max(maxR, height[right])
         waterCount += (maxR - height[right])
-
+    
     return waterCount
-  

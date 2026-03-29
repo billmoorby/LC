@@ -1,6 +1,6 @@
 # Time Complexity: O(n)
 
-* Time Complexity is O(n) since we make a single pass over the 'height' arrayy to compute the trapped water at each position.
+* Time Complexity is O(n) since we make a single pass over the 'height' array to compute the trapped water at each position.
 
 
 # Space Complexity: O(1)

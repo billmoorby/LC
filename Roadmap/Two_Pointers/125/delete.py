@@ -9,10 +9,11 @@ class Solution:
         left+=1
       while not s[right].isalnum() and left < right:
         right-=1
-
+      
       if s[left].lower() != s[right].lower():
         return False
       left+=1
       right-=1
-    
+
     return True
+  
