@@ -1,0 +1,15 @@
+# Strategy
+
+* Optimized Approach:
+
+  - Start off by using binary search on the rows. 
+
+  - Create pointers for the topRow and bottomRow.
+
+  - Use binary search by identifying the middleRow at each iteration and cutting the search space in half depending on the location of our target.
+
+  - By using binary search on our 'm' rows, we take O(log m) time as we are reducing the tows each iteration.
+
+  - After we find our row, we then perform binary search on the 'n' elements in that row. This takes O(log n) time as we are reducing the number of elements at each iteration.
+
+  

@@ -1,0 +1,14 @@
+# Time Complexity: O(log m * log n)
+
+* Time Complexity is O(log m * log n).
+  - We use binary search on our 'm' rows to find the row with our target. This takes O(log m) time since we are reducing the number of rows at each iteration.
+
+  - After we find out row, we then perform binary search on the 'n' elements in that row. This takes O(log n) time as we are reducing the number of elements ar each iteration.
+
+  - This takes a total of O(log m) + O(log n) = O(log m * log n) time.
+
+
+
+# Space Complexity: O(1)
+
+* Space Complexity is O(1) as we're only using variables and no additional data structures were created.
