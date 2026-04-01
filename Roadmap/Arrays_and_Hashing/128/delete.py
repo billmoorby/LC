@@ -14,7 +14,7 @@ class Solution:
         while (n+1) in num_set:
           n+=1
           current_streak+=1
-        
         max_streak = max(max_streak, current_streak)
     
     return max_streak
+  

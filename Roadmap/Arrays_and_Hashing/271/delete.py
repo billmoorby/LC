@@ -16,7 +16,8 @@ class Solution:
         j+=1
       
       stringLength = int(s[i:j])
-      lst.append(s[j+1:j+1+stringLength])
+      lst.append(s[j+1: j+1+stringLength])
 
       i = j+1+stringLength
     return lst
+  

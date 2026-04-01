@@ -10,7 +10,7 @@ class Solution:
     
     for n, freq in freq_map.items():
       buckets[freq].append(n)
-    
+
     for i in range(len(buckets)-1, -1, -1):
       if buckets[i]:
         for j in buckets[i]:
