@@ -3,12 +3,12 @@ class Solution:
   def maxArea(self, height):
     largestArea = 0
     left, right = 0, len(height)-1
+
     while left < right:
       currentArea = (right-left) * min(height[left], height[right])
-      largestArea = max(largestArea, currentArea)
+      largestArea = max(currentArea, largestArea)
       if height[left] < height[right]:
         left+=1
       else:
         right-=1
     return largestArea
-  

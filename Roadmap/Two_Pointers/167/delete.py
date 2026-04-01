@@ -4,10 +4,10 @@ class Solution:
     left, right = 0, len(numbers)-1
 
     while left < right:
-      currentSum = numbers[left] + numbers[right]
-      if currentSum < target:
+      curr_sum = numbers[left] + numbers[right]
+      if curr_sum < target:
         left+=1
-      elif currentSum > target:
+      elif curr_sum > target:
         right-=1
       else:
         return [left+1, right+1]
