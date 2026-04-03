@@ -6,9 +6,12 @@ class Solution:
 
     while left < right:
       currentArea = (right-left) * min(height[left], height[right])
-      largestArea = max(currentArea, largestArea)
+      largestArea = max(largestArea, currentArea)
+
       if height[left] < height[right]:
         left+=1
       else:
         right-=1
+    
     return largestArea
+    
